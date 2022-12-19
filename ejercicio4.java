@@ -23,7 +23,7 @@
 // Segundo ejericio
 // ---------------------------------------------------------------------------------
 
-public class ejercicio4 {
+/*public class ejercicio4 {
     public static void main(String[] args) {
         int numeroWhile = 0;
         while (numeroWhile < 3) {
@@ -32,7 +32,7 @@ public class ejercicio4 {
         }
 
     }
-}
+}*/
 
 // Tercer ejercicio
 // ---------------------------------------------------------------------------------
