@@ -4,7 +4,7 @@ public class ejer8 {
         Persona persona = new Persona();
         persona.setEdad(21);
         persona.setNombre("Angela");
-        persona.setTelefono("3185261466");
+        persona.setTelefono("3183457299");
         System.out.println("Tu edad es " + persona.getEdad());
         System.out.println("Tu nombre es " + persona.getNombre());
         System.out.println("Tu numero es " + persona.getTelefono());
