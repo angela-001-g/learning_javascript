@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <form action = "resultados.html" method = "GET"> <!--action para decirle en donde guardar info, method GET para que traiga la info-->
+            <div>
+                <label for = "nombreusuario">Username</label> <!--for para que al clickear sobre Nombre de usuario, me señale los espacios que debo llenar como usuario-->
+                <input type = "text" name = "nombreusuario" id = "nombreusuario" required> <!--name para introducir ahí lo que ponga el usuario-->
+            </div>
+            <br>
+            <div>
+                <label for = "passworduser">Password</label>
+                <input type = "password" name = "passworduser" id = "passworduser" required> <!--id para identificar el elemento unico y luego poder vincularlo-->
+            </div>         
+            <br> 
+            <div>
+                <label for = "email">E-mail</label>
+                <input type = "email" id = "email" name = "email" required>
+            </div>                                               <!--requires para hacerlo obligatorio de llenar-->
+             <br>
+             <div>
+                <label>Fecha de nacimiento</label>
+                <input type = "date">
+             </div>
+             <br>
+                <div>
+                    <label>Ingresa tu cantidad preferida </label>
+                    <input type = "number" min = "0" max = "200" step = "2">
+                </div>
+             <br>
+            <div>
+                <label for = "coments">Comentarios</label> 
+                <textarea name = "coments" id = "coments"></textarea>
+            </div>
+            <button type = "submit">Send</button>  <!--Envia los datos cuando doy enter-->
+            <button type = "reset">Reset</button>  <!--Vacía el formulario-->
+
+        </form>
+    </body>
+</html>
