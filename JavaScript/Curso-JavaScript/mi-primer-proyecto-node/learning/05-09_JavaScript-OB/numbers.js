@@ -8,7 +8,9 @@ console.log(b);
 
 let c = 0.2; 
 console.log(b + c); // 0.30000000000000004 <-- Imprime eso. 
-//Lo anterior pasa por cómo está almacenado el 0.3000... con el numero de bytes que tiene el lenguaje para esa variable no se puede llegar a la cantidad exacta de 0.3 
+//Lo anterior pasa por cómo está almacenado el 0.3000... con el numero de bytes que tiene el lenguaje para esa variable no se puede llegar a la cantidad exacta de 0.3
+
+console.log(Math.round((0.1 + 0.2)*100)/100); //Para redondear a 0.3
 
 
 
