@@ -1,22 +1,22 @@
-// let input = "Cancer"; 
-// let db = "cancer"; 
+ let input = "Cancer"; 
+ let db = "cancer"; 
 
-// console.log(input === db); //Da falso por las mayusculas y minusculas (c != C)
+ console.log(input === db); //Da falso por las mayusculas y minusculas (c != C)
 
  // Para que sean iguales: toLowerCase() - toUpperCase()
-// console.log(input.toLowerCase === db.toLowerCase); //Da true porque las pasa a minuscular 
-// console.log(input.toUpperCase === db.toUpperCase); //Da true porque pasa todo el texto a mayuscula
-// console.log(input.toLocaleUpperCase === db.toLocaleUpperCase); //Para idiomas como el turco que tienen un comportamiento diferente en el codigo ASCII
+console.log(input.toLowerCase === db.toLowerCase); //Da true porque las pasa a minuscular 
+ console.log(input.toUpperCase === db.toUpperCase); //Da true porque pasa todo el texto a mayuscula
+ console.log(input.toLocaleUpperCase === db.toLocaleUpperCase); //Para idiomas como el turco que tienen un comportamiento diferente en el codigo ASCII
 
 // Formas de concatenaar dos cadenas de caracteres 
 
 
-// let str1 = "Hola soy la primera cadena"; 
-// let str2 = "Hola soy la segunda cadena"; 
+ let str1 = "Hola soy la primera cadena"; 
+ let str2 = "Hola soy la segunda cadena"; 
 
-// console.log(str1.concat(" ", str2, " Mas cosas")); //Mejor utilizar esto si no hay sumas aritmeticas 
+ console.log(str1.concat(" ", str2, " Mas cosas")); //Mejor utilizar esto si no hay sumas aritmeticas 
 
-// console.log(str1 + " " + str2); 
+ console.log(str1 + " " + str2); 
 
 //Eliminar espacios al inicio y al final 
 
