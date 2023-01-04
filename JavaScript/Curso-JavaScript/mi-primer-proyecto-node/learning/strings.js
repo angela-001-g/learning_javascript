@@ -40,9 +40,3 @@ console.log(texto_largo.replace("el", "cinco")); //Solo reemplaza el primer el
 
 
 console.log(texto_largo.replace(/el/g, "cinco"));
-
-
-
-
-
-
