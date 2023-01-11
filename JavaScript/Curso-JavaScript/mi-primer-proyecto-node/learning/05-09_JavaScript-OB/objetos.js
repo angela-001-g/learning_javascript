@@ -41,7 +41,7 @@ obj3.nombre = "Gorka"
 console.log(obj.nombre)
 console.log(obj3.nombre)
 
-
+/////////////
 // Cómo ordenar listas de objetos en función de una propiedad
 
 const listaPeliculas = [
