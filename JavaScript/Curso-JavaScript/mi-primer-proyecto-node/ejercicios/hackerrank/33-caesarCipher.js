@@ -3,7 +3,7 @@ function caesarCipher(s, k) {
     let alphabet =  ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
     let objAlphabet = {} 
     let sModif = [];
-
+    
     let minusculas = s.toLowerCase()
     while(k>26){
         k -= 26
@@ -19,20 +19,21 @@ function caesarCipher(s, k) {
     for(let i = 0; i<newAlphabet.length; i++){
         objAlphabet[nonModAlphabet[i]] = newAlphabet[i]
     }
+
+   let spliteado = s.split('')
    minusculas.split('')
+
    for(let i = 0; i<minusculas.length; i++){
     if(objAlphabet[minusculas[i]] === undefined){
         sModif.push(minusculas[i])
     } else {
         sModif.push(objAlphabet[minusculas[i]])
     }
-   }
-   let spliteado = s.split('')
-   for (let i = 0; i < spliteado.length; i++) {
-    if (spliteado[i] === spliteado[i].toUpperCase()) {
-      sModif = sModif.substring(0, i) + sModif[i].toUpperCase() + sModif.substring(i + 1);
+    if (spliteado[i].toUpperCase() === spliteado[i]) {
+        sModif[i] = sModif[i].toUpperCase();
     }
-  }
-  console.log(sModif)
+   }
+   let resultado = sModif.join("")
+   return resultado 
 }
-caesarCipher("There's-a-starman-waiting-in-the-sky", 3)
+console.log(caesarCipher("There's-a-starman-waiting-in-the-sky", 3))
