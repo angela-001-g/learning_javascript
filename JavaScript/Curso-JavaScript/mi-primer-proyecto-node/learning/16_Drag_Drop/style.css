@@ -1,0 +1,22 @@
+.seccion{
+    background-color: blueviolet;
+    padding: 1rem;
+    margin: 1rem; 
+}
+
+.parrafo {
+    background-color: white;
+    padding: 1rem;
+}
+
+.parrafo.dragging{
+    opacity: 0.3;
+}
+
+.imagen-fantasma{
+    width: 300px;
+    height: 300px;
+    background-color: red; 
+    position: absolute; 
+     left: -100vw  /*Esto corre la imagen a la izquierda de la pantalla, no es que no esté, es que no se ve porque está por fuera */
+}
