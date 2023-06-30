@@ -1,0 +1,50 @@
+.container{
+    display: flex    
+}
+#tablero{
+    width: 600px;
+    /* padding: 35px; */
+    height: 900px;
+    border: 2px solid black;
+    margin: 0px;
+
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.trio{
+    display: flex;
+}
+.cuadricula{
+    width: 199px;
+    height: 298px;
+    border: 0.5px solid purple;
+}
+
+#tablero img{
+    width: 299px;
+    height: 199px;
+    border: 0.5px solid purple;
+}
+
+
+#piezas{
+    width: 600px;
+    margin-left: 200px;
+    border: 2px solid black;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#piezas img{
+    width: 299px;
+    height: 199px;
+    border: 0.5px solid purple;
+}
+
+
+
+
+
+
+
