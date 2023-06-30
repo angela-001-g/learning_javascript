@@ -29,6 +29,7 @@
 
 #piezas{
     width: 600px;
+    height: 900px;
     margin-left: 200px;
     border: 2px solid black;
 
@@ -39,6 +40,12 @@
 #piezas img{
     width: 299px;
     height: 199px;
+    border: 0.5px solid purple;
+}
+
+.cuadricula-piezas{
+    width: 199px;
+    height: 298px;
     border: 0.5px solid purple;
 }
 
