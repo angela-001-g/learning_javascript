@@ -49,6 +49,12 @@
     border: 0.5px solid purple;
 }
 
+#uno {
+    background: url(../ejercicio16/imagenes/1.jpg) no-repeat;
+    background-size: cover;
+    height: 198px;
+    width: 298px;
+}
 
 
 

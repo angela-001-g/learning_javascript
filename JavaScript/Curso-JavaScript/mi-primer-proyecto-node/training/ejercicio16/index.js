@@ -1,10 +1,10 @@
-const piezas = document.querySelector("#cuadricula-piezas")
+// const piezas = document.querySelector("#cuadricula-piezas")
 
-piezas.forEach(pieza => {
-    pieza.addEventListener("dragstart", pieza => {
-        console.log("esto arrastrando una ficha")
-    })
-})
+// piezas.forEach(pieza => {
+//     pieza.addEventListener("dragstart", pieza => {
+//         console.log("esto arrastrando una ficha")
+//     })
+// })
 
 
 
