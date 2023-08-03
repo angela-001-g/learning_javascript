@@ -1,46 +1,16 @@
 function closestNumbers(arr) {
- arr.sort(function (a, b){
-    return a - b
- })
+    arr.sort((a, b) => a - b);
+    let diferencia = arr[1] - arr[0];
+    let resultado = [arr[0], arr[1]];
 
-let arrayPairs = []
-let restas = []
-
-for(let i = 0; i < arr.length; i++){
-    arrayPairs.push(arr.slice(i, i + 2));
-}
-
-
-arrayPairs.forEach(element => {
-    for(let i = 0; i < element.length; i+=2){
-        let resta = Math.abs(element[0] - element[1])
-        restas.push(resta)
+    for (let i = 1; i < arr.length - 1; i++) {
+        if (arr[i + 1] - arr[i] < diferencia) {
+            resultado = [arr[i], arr[i + 1]];
+            diferencia = arr[i + 1] - arr[i];
+        } else if (arr[i + 1] - arr[i] === diferencia) {
+            resultado = [...resultado, arr[i], arr[i + 1]];
+        }
     }
-})
 
-let newObj ={}
-
-for(let i = 0; i<restas.length; i++){
-    if(!newObj[restas[i]]){
-        newObj[restas[i]] = arrayPairs[i]
-    } else {
-        newObj[restas[i]] = arrayPairs[i]
-    }
+    return resultado;
 }
-
-delete newObj.NaN
-
-let final = []
-let claves = Object.keys(newObj)
-
-for(let i = 0; i<claves.length; i++){
-    if(claves[i] === claves[0]){
-        final.push(newObj[claves[i]])
-    }
-}
-let result = final.flat()
-
-return result
-}
-
-console.log(closestNumbers([-5, 15, 25, 71, 63]))
