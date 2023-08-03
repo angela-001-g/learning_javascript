@@ -21,8 +21,15 @@ arrayPairs.forEach(element => {
 let newObj ={}
 
 for(let i = 0; i<restas.length; i++){
-!newObj[restas[i]] ? newObj[restas[i]] = arrayPairs[i]:  newObj[restas[i]] += 1
+    if(!newObj[restas[i]]){
+        newObj[restas[i]] = arrayPairs[i]
+    } else {
+        newObj[restas[i]] = arrayPairs[i]
+    }
 }
+
+delete newObj.NaN
+
 let final = []
 let claves = Object.keys(newObj)
 
@@ -37,4 +44,3 @@ return result
 }
 
 console.log(closestNumbers([-5, 15, 25, 71, 63]))
-closestNumbers([-20, -3916237, -357920, -3620601, 7374819, -7330761, 30, 6246457, -6461594, 266854])
